@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+.Box{
+    height: 200px;
+    width: 210px;
+    border: 2px solid black;
+    background-color: rgb(12, 192, 247);
+    margin: 20px;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
