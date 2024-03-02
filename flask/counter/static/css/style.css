@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+.add {
+    width: auto;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+}
+.reset{
+    
+    width: auto;
+    background-color: rgb(226, 43, 165);
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: 10px;
+
+}
