@@ -1,0 +1,19 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+h3 {
+    margin-top: 30px;
+}
+.datetime{
+    border: 2px solid black;
+    width: inherit;
+    margin-top: 20px;
+    font-size: 40px;
+}
