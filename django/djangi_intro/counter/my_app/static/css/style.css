@@ -1,0 +1,26 @@
+body{
+    max-width: 560px;
+    margin: auto;
+    text-align: center;
+}
+.add {
+    width: 200px;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.reset{
+    
+    width: 100px;
+    background-color: rgb(226, 43, 165);
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    border: 2px solid black;
+    margin-left: 228px;
+
+}
