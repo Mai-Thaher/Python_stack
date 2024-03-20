@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+.btn{
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px black;
+    background-color: purple;
+    color: beige;
+}
+.incorrect{
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 200px;
+    height: 140px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 60px;
+    margin-bottom: 10px;
+}
+.correct{
+    background-color: green;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    width: 200px;
+    height: 140px;
+    margin-left: 45%;
+    color: white;
+    padding-top: 60px;
+}
+.attempt {
+    font-size: small;
+}
+.lose{
+    margin-top: 15%;
+    
+}
