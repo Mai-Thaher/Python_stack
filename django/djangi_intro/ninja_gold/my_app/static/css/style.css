@@ -1,0 +1,58 @@
+/* .container{
+    width: 40%;
+    margin-left: 200px;
+}  */
+.total{
+    
+    border: 2px solid black;
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+    
+}
+.score{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 16.5%;
+    margin-top: 20px;
+}
+.buildings {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.farm, .cave, .house, .casino {
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 20px 10px;
+    width: 200px;
+    height: 200px;
+}
+.activities {
+    width: 66.2%;
+    height: 200px;
+    overflow: scroll;
+    border: 2px solid black;
+    margin-left: 220px;
+    
+    
+}
+.activities-title{
+    margin-left: 220px;
+}
+
+.startover{
+    position: relative;
+    top: 10px;
+    left: 220px;
+}
+.green{
+    color: green;
+    display: block;
+}
+.red{
+    color: red;
+}
