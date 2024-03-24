@@ -1,0 +1,52 @@
+Query: Create 3 new dojos
+dojo1=Dojo.objects.create(name='Mai', city='Nablus', state='Palestine')
+dojo3=Dojo.objects.create(name='Lama', city='Tulkarm', state='Palestine')
+dojo2=Dojo.objects.create(name='Hadeel', city='Amman', state='Jordan')
+
+Query: Delete the 3 dojos you just created
+>>> dojo1=Dojo.objects.get(id=1)
+>>> dojo1.delete()
+>>> dojo2=Dojo.objects.get(id=2)
+>>> dojo1.delete()
+>>> dojo3=Dojo.objects.get(id=3)
+>>> dojo1.delete()
+
+Query: Create 3 more dojos
+>>> Dojo.objects.create(name='Architecture', city='Ramallah', state='Palestine')
+>>> Dojo.objects.create(name='Painting', city='Amman', state='Jordan')
+>>> Dojo.objects.create(name='Sculpting', city='Moscow', state='Russia')
+
+Query: Create 3 ninjas that belong to the first dojo
+dojo1=Dojo.objects.get(id=4)
+ninja1=Ninja.objects.create(first_name="Maram", last_name="Thaher",dojo=dojo1)
+ninja1=Ninja.objects.create(first_name="Majdi", last_name="Daraawi",dojo=dojo1)
+ninja1=Ninja.objects.create(first_name="Hala", last_name="Daraawi",dojo=dojo1)
+
+Query: Create 3 ninjas that belong to the second dojo
+>>> dojo2=Dojo.objects.get(id=5)
+>>> ninja1=Ninja.objects.create(first_name="Mai", last_name="Thaher",dojo=dojo2)
+>>> ninja2=Ninja.objects.create(first_name="Hadeel", last_name="Rahhal",dojo=dojo2)
+>>> ninja3=Ninja.objects.create(first_name="Leena", last_name="Asaad",dojo=dojo2)
+
+Query: Create 3 ninjas that belong to the third dojo
+dojo3=Dojo.objects.get(id=6)
+ninja1=Ninja.objects.create(first_name="Ameed", last_name="Baker",dojo=dojo3)
+ninja1=Ninja.objects.create(first_name="Ahmad", last_name="Eid",dojo=dojo3)
+ninja1=Ninja.objects.create(first_name="Yousef", last_name="Araman",dojo=dojo3)
+
+Query: Retrieve all the ninjas from the first dojo
+>>> dojo1=Dojo.objects.get(id=4)
+>>> dojo1.ninjas.all()
+
+Query: Retrieve all the ninjas from the last dojo
+>>> last_dojo=Dojo.objects.last()
+>>> last_dojo.ninjas.all()
+
+Query: Retrieve the last ninja's dojo
+>>> Ninja9=Ninja.objects.get(id=9)
+>>> Ninja9.dojo
+
+Add a new text field called "desc" to your Dojo class
+Create and run the migration files to update the table in your database. If needed, provide a default value of "old dojo"
+Query: Create a new dojo
+>>> new_dojo=Dojo.objects.create(name="Programming", city="Chicago", state="USA", desc="First solve the problem, then write the code")
