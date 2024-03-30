@@ -10,16 +10,7 @@ def get_result(request):
     user_gender=request.POST['gender']
     user_language=request.POST.getlist('language')
     user_comment=request.POST['comment']
-
-    context={
-        "username":user_name,
-        "site":user_location,
-        "gender_type": user_gender,
-        "selected_languages": user_language,
-        "comm":user_comment
-    }
     
-    request.session['user_info']=context
     request.session['username']=user_name
     request.session['site']=user_location
     request.session['gender_type']=user_gender
@@ -28,7 +19,7 @@ def get_result(request):
     return redirect('/success')
 
 def success(request):
-    return render(request, 'show.html', request.session['user_info'])
+    return render(request, 'show.html')
 
 def go_back(request):
     return redirect ('/')
