@@ -1,0 +1,11 @@
+body {
+    max-width: 500px;
+    margin: auto;}
+
+    
+.id, .desc, .author{
+    font-weight: bold;
+}
+.btn{
+    margin-top: 10px;
+}

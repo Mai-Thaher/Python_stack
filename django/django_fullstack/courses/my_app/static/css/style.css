@@ -1,0 +1,32 @@
+body {
+    max-width: 700px;
+    margin: auto;
+    background-color:azure;
+}
+.btn{
+    margin-top: 10px;
+}
+.Yes-btn{
+    background-color: rgb(196, 8, 8);
+    border:2px 2px solid black;
+    box-shadow: 2px 2px black;
+    color: white;
+}
+.No-btn{
+    border:2px 2px solid black;
+    box-shadow: 2px 2px black;
+}
+.confirm_delete{
+    font-weight: bold;
+}
+.add{
+    background-color: green;
+    border:2px 2px solid black;
+    box-shadow: 2px 2px black;
+    color: white;
+    margin-top: 10px;
+    
+}
+.form-control{
+    width: 500px;
+}
